@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client Portal - Export Go</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <a href="index.html" class="logo-link">
+                        <i class="fas fa-globe-americas"></i>
+                        <span class="logo-text">Export Go</span>
+                    </a>
+                </div>
+                
+                <div class="nav-menu" id="nav-menu">
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="services.html" class="nav-link" data-translate="nav.services">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="pricing.html" class="nav-link" data-translate="nav.pricing">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="blog.html" class="nav-link" data-translate="nav.blog">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="portal.html" class="nav-link active" data-translate="nav.portal">Portal</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="calculator.html" class="nav-link" data-translate="nav.calculator">Calculator</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="index.html#contact" class="nav-link" data-translate="nav.contacts">Contacts</a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="nav-actions">
+                    <div class="language-selector">
+                        <button class="language-btn" id="language-btn">
+                            <i class="fas fa-globe"></i>
+                            <span id="current-lang">EN</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="language-dropdown" id="language-dropdown">
+                            <a href="#" class="language-option" data-lang="en">English</a>
+                            <a href="#" class="language-option" data-lang="ru">Русский</a>
+                            <a href="#" class="language-option" data-lang="fr">Français</a>
+                            <a href="#" class="language-option" data-lang="es">Español</a>
+                            <a href="#" class="language-option" data-lang="zh">中文</a>
+                        </div>
+                    </div>
+                    
+                    <div class="cta-buttons">
+                        <a href="calculator.html" class="btn btn-primary" data-translate="cta.start_export">Start Export</a>
+                        <a href="index.html#contact" class="btn btn-secondary" data-translate="cta.get_consultation">Get Consultation</a>
+                    </div>
+                    
+                    <div class="nav-toggle" id="nav-toggle">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <h1 class="page-title" data-translate="portal.title">Client Portal</h1>
+                <p class="page-subtitle" data-translate="portal.subtitle">Track your export projects and manage your international business operations</p>
+            </div>
+        </section>
+
+        <!-- Dashboard -->
+        <section class="portal-dashboard">
+            <div class="container">
+                <!-- Welcome Section -->
+                <div class="welcome-section">
+                    <div class="welcome-content">
+                        <h2 data-translate="portal.welcome.title">Welcome back, John Smith</h2>
+                        <p data-translate="portal.welcome.subtitle">Here's an overview of your active export projects</p>
+                    </div>
+                    <div class="welcome-actions">
+                        <a href="calculator.html" class="btn btn-primary" data-translate="portal.new_project">New Project</a>
+                        <a href="services.html" class="btn btn-outline" data-translate="portal.browse_services">Browse Services</a>
+                    </div>
+                </div>
+
+                <!-- Stats Overview -->
+                <div class="stats-overview">
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-project-diagram"></i>
+                        </div>
+                        <div class="stat-content">
+                            <h3 class="stat-number">5</h3>
+                            <p class="stat-label" data-translate="portal.stats.active_projects">Active Projects</p>
+                        </div>
+                    </div>
+                    
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <div class="stat-content">
+                            <h3 class="stat-number">12</h3>
+                            <p class="stat-label" data-translate="portal.stats.completed">Completed</p>
+                        </div>
+                    </div>
+                    
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="stat-content">
+                            <h3 class="stat-number">3</h3>
+                            <p class="stat-label" data-translate="portal.stats.pending">Pending</p>
+                        </div>
+                    </div>
+                    
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-dollar-sign"></i>
+                        </div>
+                        <div class="stat-content">
+                            <h3 class="stat-number">$45K</h3>
+                            <p class="stat-label" data-translate="portal.stats.revenue">Revenue Generated</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projects Grid -->
+                <div class="projects-section">
+                    <h2 class="section-title" data-translate="portal.projects.title">Your Projects</h2>
+                    
+                    <div class="projects-grid">
+                        <!-- Project 1 -->
+                        <div class="project-card">
+                            <div class="project-header">
+                                <h3 class="project-title" data-translate="portal.project1.title">European Market Expansion</h3>
+                                <span class="project-status status-in-progress" data-translate="portal.status.in_progress">In Progress</span>
+                            </div>
+                            <div class="project-content">
+                                <p class="project-description" data-translate="portal.project1.description">Expanding TechManufacturing Inc. products to Germany, France, and Italy markets.</p>
+                                
+                                <div class="project-progress">
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" style="width: 65%"></div>
+                                    </div>
+                                    <span class="progress-text">65% Complete</span>
+                                </div>
+                                
+                                <div class="project-milestones">
+                                    <h4 data-translate="portal.next_milestone">Next Milestone:</h4>
+                                    <p data-translate="portal.project1.milestone">Documentation Review - Due Dec 20, 2024</p>
+                                </div>
+                                
+                                <div class="project-actions">
+                                    <a href="#" class="btn btn-outline btn-sm" data-translate="portal.view_details">View Details</a>
+                                    <a href="#" class="btn btn-primary btn-sm" data-translate="portal.upload_docs">Upload Documents</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Project 2 -->
+                        <div class="project-card">
+                            <div class="project-header">
+                                <h3 class="project-title" data-translate="portal.project2.title">Asian Distribution Network</h3>
+                                <span class="project-status status-completed" data-translate="portal.status.completed">Completed</span>
+                            </div>
+                            <div class="project-content">
+                                <p class="project-description" data-translate="portal.project2.description">Successfully established distribution partnerships in Japan, South Korea, and Singapore.</p>
+                                
+                                <div class="project-progress">
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" style="width: 100%"></div>
+                                    </div>
+                                    <span class="progress-text">100% Complete</span>
+                                </div>
+                                
+                                <div class="project-milestones">
+                                    <h4 data-translate="portal.completion_date">Completion Date:</h4>
+                                    <p>November 15, 2024</p>
+                                </div>
+                                
+                                <div class="project-actions">
+                                    <a href="#" class="btn btn-outline btn-sm" data-translate="portal.view_report">View Report</a>
+                                    <a href="#" class="btn btn-primary btn-sm" data-translate="portal.new_project">New Project</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Project 3 -->
+                        <div class="project-card">
+                            <div class="project-header">
+                                <h3 class="project-title" data-translate="portal.project3.title">Export Compliance Audit</h3>
+                                <span class="project-status status-pending" data-translate="portal.status.pending">Pending</span>
+                            </div>
+                            <div class="project-content">
+                                <p class="project-description" data-translate="portal.project3.description">Comprehensive audit of current export processes and compliance requirements.</p>
+                                
+                                <div class="project-progress">
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" style="width: 0%"></div>
+                                    </div>
+                                    <span class="progress-text">0% Complete</span>
+                                </div>
+                                
+                                <div class="project-milestones">
+                                    <h4 data-translate="portal.start_date">Start Date:</h4>
+                                    <p>January 5, 2025</p>
+                                </div>
+                                
+                                <div class="project-actions">
+                                    <a href="#" class="btn btn-outline btn-sm" data-translate="portal.view_details">View Details</a>
+                                    <a href="#" class="btn btn-primary btn-sm" data-translate="portal.prepare_docs">Prepare Documents</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Project 4 -->
+                        <div class="project-card">
+                            <div class="project-header">
+                                <h3 class="project-title" data-translate="portal.project4.title">Latin America Entry</h3>
+                                <span class="project-status status-in-progress" data-translate="portal.status.in_progress">In Progress</span>
+                            </div>
+                            <div class="project-content">
+                                <p class="project-description" data-translate="portal.project4.description">Market entry strategy for Brazil, Mexico, and Argentina markets.</p>
+                                
+                                <div class="project-progress">
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" style="width: 30%"></div>
+                                    </div>
+                                    <span class="progress-text">30% Complete</span>
+                                </div>
+                                
+                                <div class="project-milestones">
+                                    <h4 data-translate="portal.next_milestone">Next Milestone:</h4>
+                                    <p data-translate="portal.project4.milestone">Market Research Report - Due Jan 10, 2025</p>
+                                </div>
+                                
+                                <div class="project-actions">
+                                    <a href="#" class="btn btn-outline btn-sm" data-translate="portal.view_details">View Details</a>
+                                    <a href="#" class="btn btn-primary btn-sm" data-translate="portal.upload_docs">Upload Documents</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Project 5 -->
+                        <div class="project-card">
+                            <div class="project-header">
+                                <h3 class="project-title" data-translate="portal.project5.title">Documentation Translation</h3>
+                                <span class="project-status status-in-progress" data-translate="portal.status.in_progress">In Progress</span>
+                            </div>
+                            <div class="project-content">
+                                <p class="project-description" data-translate="portal.project5.description">Translation of product documentation into Spanish, French, and German.</p>
+                                
+                                <div class="project-progress">
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" style="width: 80%"></div>
+                                    </div>
+                                    <span class="progress-text">80% Complete</span>
+                                </div>
+                                
+                                <div class="project-milestones">
+                                    <h4 data-translate="portal.next_milestone">Next Milestone:</h4>
+                                    <p data-translate="portal.project5.milestone">Final Review - Due Dec 25, 2024</p>
+                                </div>
+                                
+                                <div class="project-actions">
+                                    <a href="#" class="btn btn-outline btn-sm" data-translate="portal.view_details">View Details</a>
+                                    <a href="#" class="btn btn-primary btn-sm" data-translate="portal.review_docs">Review Documents</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quick Actions -->
+                <div class="quick-actions">
+                    <h2 class="section-title" data-translate="portal.quick_actions">Quick Actions</h2>
+                    <div class="actions-grid">
+                        <a href="calculator.html" class="action-card">
+                            <div class="action-icon">
+                                <i class="fas fa-calculator"></i>
+                            </div>
+                            <h3 data-translate="portal.action1.title">Calculate Export Cost</h3>
+                            <p data-translate="portal.action1.description">Get instant cost estimates for your export projects</p>
+                        </a>
+                        
+                        <a href="services.html" class="action-card">
+                            <div class="action-icon">
+                                <i class="fas fa-plus-circle"></i>
+                            </div>
+                            <h3 data-translate="portal.action2.title">Start New Project</h3>
+                            <p data-translate="portal.action2.description">Begin a new export project with our expert team</p>
+                        </a>
+                        
+                        <a href="#" class="action-card">
+                            <div class="action-icon">
+                                <i class="fas fa-file-upload"></i>
+                            </div>
+                            <h3 data-translate="portal.action3.title">Upload Documents</h3>
+                            <p data-translate="portal.action3.description">Submit required documents for your projects</p>
+                        </a>
+                        
+                        <a href="#" class="action-card">
+                            <div class="action-icon">
+                                <i class="fas fa-comments"></i>
+                            </div>
+                            <h3 data-translate="portal.action4.title">Contact Support</h3>
+                            <p data-translate="portal.action4.description">Get help from our export specialists</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-globe-americas"></i>
+                        <span class="logo-text">Export Go</span>
+                    </div>
+                    <p class="footer-description" data-translate="footer.description">Your trusted partner for international export solutions and global business expansion.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title" data-translate="footer.services">Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="services.html" data-translate="footer.export_turnkey">Export Turnkey</a></li>
+                        <li><a href="services.html" data-translate="footer.audit_strategy">Audit & Strategy</a></li>
+                        <li><a href="services.html" data-translate="footer.material_prep">Material Preparation</a></li>
+                        <li><a href="services.html" data-translate="footer.client_finding">Finding Clients</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title" data-translate="footer.company">Company</h3>
+                    <ul class="footer-links">
+                        <li><a href="about.html" data-translate="footer.about">About Us</a></li>
+                        <li><a href="blog.html" data-translate="footer.blog">Blog</a></li>
+                        <li><a href="portal.html" data-translate="footer.portal">Client Portal</a></li>
+                        <li><a href="calculator.html" data-translate="footer.calculator">Calculator</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title" data-translate="footer.contact">Contact</h3>
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                        <p><i class="fas fa-envelope"></i> info@exportgo.com</p>
+                        <p><i class="fas fa-map-marker-alt"></i> 123 Business Ave, Suite 100, New York, NY 10001</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="newsletter">
+                    <h4 data-translate="footer.newsletter">Subscribe to our newsletter</h4>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter your email" data-translate-placeholder="footer.email_placeholder" required>
+                        <button type="submit" data-translate="footer.subscribe">Subscribe</button>
+                    </form>
+                </div>
+                <div class="footer-copyright">
+                    <p>&copy; 2024 Export Go. <span data-translate="footer.rights">All rights reserved.</span></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

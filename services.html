@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Export Go</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <a href="index.html" class="logo-link">
+                        <i class="fas fa-globe-americas"></i>
+                        <span class="logo-text">Export Go</span>
+                    </a>
+                </div>
+                
+                <div class="nav-menu" id="nav-menu">
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="services.html" class="nav-link active" data-translate="nav.services">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="pricing.html" class="nav-link" data-translate="nav.pricing">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="blog.html" class="nav-link" data-translate="nav.blog">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="portal.html" class="nav-link" data-translate="nav.portal">Portal</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="calculator.html" class="nav-link" data-translate="nav.calculator">Calculator</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="index.html#contact" class="nav-link" data-translate="nav.contacts">Contacts</a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="nav-actions">
+                    <div class="language-selector">
+                        <button class="language-btn" id="language-btn">
+                            <i class="fas fa-globe"></i>
+                            <span id="current-lang">EN</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="language-dropdown" id="language-dropdown">
+                            <a href="#" class="language-option" data-lang="en">English</a>
+                            <a href="#" class="language-option" data-lang="ru">Русский</a>
+                            <a href="#" class="language-option" data-lang="fr">Français</a>
+                            <a href="#" class="language-option" data-lang="es">Español</a>
+                            <a href="#" class="language-option" data-lang="zh">中文</a>
+                        </div>
+                    </div>
+                    
+                    <div class="cta-buttons">
+                        <a href="calculator.html" class="btn btn-primary" data-translate="cta.start_export">Start Export</a>
+                        <a href="index.html#contact" class="btn btn-secondary" data-translate="cta.get_consultation">Get Consultation</a>
+                    </div>
+                    
+                    <div class="nav-toggle" id="nav-toggle">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <h1 class="page-title" data-translate="services.title">Our Services</h1>
+                <p class="page-subtitle" data-translate="services.subtitle">Comprehensive export solutions tailored to your business needs</p>
+            </div>
+        </section>
+
+        <!-- Service Filters -->
+        <section class="service-filters">
+            <div class="container">
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all" data-translate="filters.all_services">All Services</button>
+                    <button class="filter-btn" data-filter="manufacturer" data-translate="filters.manufacturer">Manufacturer</button>
+                    <button class="filter-btn" data-filter="distributor" data-translate="filters.distributor">Distributor</button>
+                    <button class="filter-btn" data-filter="network" data-translate="filters.network">Network</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Grid -->
+        <section class="services-section">
+            <div class="container">
+                <div class="services-grid">
+                    <!-- Export Turnkey -->
+                    <div class="service-card" data-category="manufacturer distributor network">
+                        <div class="service-header">
+                            <div class="service-icon">
+                                <i class="fas fa-rocket"></i>
+                            </div>
+                            <h3 class="service-title" data-translate="services.export_turnkey.title">Export Turnkey</h3>
+                            <button class="service-toggle" data-service="turnkey">
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                        </div>
+                        <div class="service-content" id="service-turnkey">
+                            <p class="service-description" data-translate="services.export_turnkey.description">Complete end-to-end export solution handling all aspects of international trade from strategy to delivery.</p>
+                            
+                            <div class="service-details">
+                                <h4 data-translate="services.key_steps">Key Steps:</h4>
+                                <ul class="steps-list">
+                                    <li data-translate="services.export_turnkey.step1">Market research and analysis</li>
+                                    <li data-translate="services.export_turnkey.step2">Documentation preparation</li>
+                                    <li data-translate="services.export_turnkey.step3">Compliance verification</li>
+                                    <li data-translate="services.export_turnkey.step4">Logistics coordination</li>
+                                    <li data-translate="services.export_turnkey.step5">Delivery tracking</li>
+                                </ul>
+                                
+                                <h4 data-translate="services.results">Results:</h4>
+                                <ul class="results-list">
+                                    <li data-translate="services.export_turnkey.result1">Successful market entry</li>
+                                    <li data-translate="services.export_turnkey.result2">Compliant documentation</li>
+                                    <li data-translate="services.export_turnkey.result3">Optimized logistics</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="service-actions">
+                                <a href="pricing.html#turnkey" class="btn btn-outline" data-translate="services.view_pricing">View Pricing</a>
+                                <a href="calculator.html" class="btn btn-primary" data-translate="services.get_quote">Get Quote</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Export Potential Audit & Strategy -->
+                    <div class="service-card" data-category="manufacturer distributor network">
+                        <div class="service-header">
+                            <div class="service-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <h3 class="service-title" data-translate="services.audit_strategy.title">Export Potential Audit & Strategy</h3>
+                            <button class="service-toggle" data-service="audit">
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                        </div>
+                        <div class="service-content" id="service-audit">
+                            <p class="service-description" data-translate="services.audit_strategy.description">Comprehensive analysis of your export readiness and development of a strategic roadmap for international expansion.</p>
+                            
+                            <div class="service-details">
+                                <h4 data-translate="services.key_steps">Key Steps:</h4>
+                                <ul class="steps-list">
+                                    <li data-translate="services.audit_strategy.step1">Business capability assessment</li>
+                                    <li data-translate="services.audit_strategy.step2">Market opportunity analysis</li>
+                                    <li data-translate="services.audit_strategy.step3">Competitive landscape review</li>
+                                    <li data-translate="services.audit_strategy.step4">Risk evaluation</li>
+                                    <li data-translate="services.audit_strategy.step5">Strategic roadmap creation</li>
+                                </ul>
+                                
+                                <h4 data-translate="services.results">Results:</h4>
+                                <ul class="results-list">
+                                    <li data-translate="services.audit_strategy.result1">Clear export strategy</li>
+                                    <li data-translate="services.audit_strategy.result2">Market prioritization</li>
+                                    <li data-translate="services.audit_strategy.result3">Risk mitigation plan</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="service-actions">
+                                <a href="pricing.html#audit" class="btn btn-outline" data-translate="services.view_pricing">View Pricing</a>
+                                <a href="calculator.html" class="btn btn-primary" data-translate="services.get_quote">Get Quote</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Export Material Preparation -->
+                    <div class="service-card" data-category="manufacturer distributor">
+                        <div class="service-header">
+                            <div class="service-icon">
+                                <i class="fas fa-file-alt"></i>
+                            </div>
+                            <h3 class="service-title" data-translate="services.material_prep.title">Export Material Preparation</h3>
+                            <button class="service-toggle" data-service="materials">
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                        </div>
+                        <div class="service-content" id="service-materials">
+                            <p class="service-description" data-translate="services.material_prep.description">Professional preparation of all required export documentation and marketing materials for international markets.</p>
+                            
+                            <div class="service-details">
+                                <h4 data-translate="services.key_steps">Key Steps:</h4>
+                                <ul class="steps-list">
+                                    <li data-translate="services.material_prep.step1">Documentation audit</li>
+                                    <li data-translate="services.material_prep.step2">Translation services</li>
+                                    <li data-translate="services.material_prep.step3">Compliance verification</li>
+                                    <li data-translate="services.material_prep.step4">Marketing material adaptation</li>
+                                    <li data-translate="services.material_prep.step5">Quality assurance</li>
+                                </ul>
+                                
+                                <h4 data-translate="services.results">Results:</h4>
+                                <ul class="results-list">
+                                    <li data-translate="services.material_prep.result1">Compliant documentation</li>
+                                    <li data-translate="services.material_prep.result2">Localized materials</li>
+                                    <li data-translate="services.material_prep.result3">Market-ready assets</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="service-actions">
+                                <a href="pricing.html#materials" class="btn btn-outline" data-translate="services.view_pricing">View Pricing</a>
+                                <a href="calculator.html" class="btn btn-primary" data-translate="services.get_quote">Get Quote</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Finding First Clients -->
+                    <div class="service-card" data-category="manufacturer distributor network">
+                        <div class="service-header">
+                            <div class="service-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <h3 class="service-title" data-translate="services.finding_clients.title">Finding First Clients</h3>
+                            <button class="service-toggle" data-service="clients">
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                        </div>
+                        <div class="service-content" id="service-clients">
+                            <p class="service-description" data-translate="services.finding_clients.description">Strategic client acquisition services to help you establish your first international customer relationships.</p>
+                            
+                            <div class="service-details">
+                                <h4 data-translate="services.key_steps">Key Steps:</h4>
+                                <ul class="steps-list">
+                                    <li data-translate="services.finding_clients.step1">Target market identification</li>
+                                    <li data-translate="services.finding_clients.step2">Lead generation</li>
+                                    <li data-translate="services.finding_clients.step3">Prospect qualification</li>
+                                    <li data-translate="services.finding_clients.step4">Initial outreach</li>
+                                    <li data-translate="services.finding_clients.step5">Relationship building</li>
+                                </ul>
+                                
+                                <h4 data-translate="services.results">Results:</h4>
+                                <ul class="results-list">
+                                    <li data-translate="services.finding_clients.result1">Qualified prospects</li>
+                                    <li data-translate="services.finding_clients.result2">Initial client meetings</li>
+                                    <li data-translate="services.finding_clients.result3">Sales pipeline</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="service-actions">
+                                <a href="pricing.html#clients" class="btn btn-outline" data-translate="services.view_pricing">View Pricing</a>
+                                <a href="calculator.html" class="btn btn-primary" data-translate="services.get_quote">Get Quote</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Export Support & Development -->
+                    <div class="service-card" data-category="manufacturer distributor network">
+                        <div class="service-header">
+                            <div class="service-icon">
+                                <i class="fas fa-hands-helping"></i>
+                            </div>
+                            <h3 class="service-title" data-translate="services.support_dev.title">Export Support & Development</h3>
+                            <button class="service-toggle" data-service="support">
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                        </div>
+                        <div class="service-content" id="service-support">
+                            <p class="service-description" data-translate="services.support_dev.description">Ongoing support and development services to help you grow and optimize your international business operations.</p>
+                            
+                            <div class="service-details">
+                                <h4 data-translate="services.key_steps">Key Steps:</h4>
+                                <ul class="steps-list">
+                                    <li data-translate="services.support_dev.step1">Performance monitoring</li>
+                                    <li data-translate="services.support_dev.step2">Process optimization</li>
+                                    <li data-translate="services.support_dev.step3">Market expansion</li>
+                                    <li data-translate="services.support_dev.step4">Issue resolution</li>
+                                    <li data-translate="services.support_dev.step5">Growth planning</li>
+                                </ul>
+                                
+                                <h4 data-translate="services.results">Results:</h4>
+                                <ul class="results-list">
+                                    <li data-translate="services.support_dev.result1">Improved performance</li>
+                                    <li data-translate="services.support_dev.result2">Expanded market reach</li>
+                                    <li data-translate="services.support_dev.result3">Sustainable growth</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="service-actions">
+                                <a href="pricing.html#support" class="btn btn-outline" data-translate="services.view_pricing">View Pricing</a>
+                                <a href="calculator.html" class="btn btn-primary" data-translate="services.get_quote">Get Quote</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-globe-americas"></i>
+                        <span class="logo-text">Export Go</span>
+                    </div>
+                    <p class="footer-description" data-translate="footer.description">Your trusted partner for international export solutions and global business expansion.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title" data-translate="footer.services">Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="services.html" data-translate="footer.export_turnkey">Export Turnkey</a></li>
+                        <li><a href="services.html" data-translate="footer.audit_strategy">Audit & Strategy</a></li>
+                        <li><a href="services.html" data-translate="footer.material_prep">Material Preparation</a></li>
+                        <li><a href="services.html" data-translate="footer.client_finding">Finding Clients</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title" data-translate="footer.company">Company</h3>
+                    <ul class="footer-links">
+                        <li><a href="about.html" data-translate="footer.about">About Us</a></li>
+                        <li><a href="blog.html" data-translate="footer.blog">Blog</a></li>
+                        <li><a href="portal.html" data-translate="footer.portal">Client Portal</a></li>
+                        <li><a href="calculator.html" data-translate="footer.calculator">Calculator</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title" data-translate="footer.contact">Contact</h3>
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                        <p><i class="fas fa-envelope"></i> info@exportgo.com</p>
+                        <p><i class="fas fa-map-marker-alt"></i> 123 Business Ave, Suite 100, New York, NY 10001</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="newsletter">
+                    <h4 data-translate="footer.newsletter">Subscribe to our newsletter</h4>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter your email" data-translate-placeholder="footer.email_placeholder" required>
+                        <button type="submit" data-translate="footer.subscribe">Subscribe</button>
+                    </form>
+                </div>
+                <div class="footer-copyright">
+                    <p>&copy; 2024 Export Go. <span data-translate="footer.rights">All rights reserved.</span></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

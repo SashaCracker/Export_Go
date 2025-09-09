@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing - Export Go</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <a href="index.html" class="logo-link">
+                        <i class="fas fa-globe-americas"></i>
+                        <span class="logo-text">Export Go</span>
+                    </a>
+                </div>
+                
+                <div class="nav-menu" id="nav-menu">
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="services.html" class="nav-link" data-translate="nav.services">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="pricing.html" class="nav-link active" data-translate="nav.pricing">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="blog.html" class="nav-link" data-translate="nav.blog">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="portal.html" class="nav-link" data-translate="nav.portal">Portal</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="calculator.html" class="nav-link" data-translate="nav.calculator">Calculator</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="index.html#contact" class="nav-link" data-translate="nav.contacts">Contacts</a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="nav-actions">
+                    <div class="language-selector">
+                        <button class="language-btn" id="language-btn">
+                            <i class="fas fa-globe"></i>
+                            <span id="current-lang">EN</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="language-dropdown" id="language-dropdown">
+                            <a href="#" class="language-option" data-lang="en">English</a>
+                            <a href="#" class="language-option" data-lang="ru">Русский</a>
+                            <a href="#" class="language-option" data-lang="fr">Français</a>
+                            <a href="#" class="language-option" data-lang="es">Español</a>
+                            <a href="#" class="language-option" data-lang="zh">中文</a>
+                        </div>
+                    </div>
+                    
+                    <div class="cta-buttons">
+                        <a href="calculator.html" class="btn btn-primary" data-translate="cta.start_export">Start Export</a>
+                        <a href="index.html#contact" class="btn btn-secondary" data-translate="cta.get_consultation">Get Consultation</a>
+                    </div>
+                    
+                    <div class="nav-toggle" id="nav-toggle">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <h1 class="page-title" data-translate="pricing.title">Pricing Plans</h1>
+                <p class="page-subtitle" data-translate="pricing.subtitle">Transparent pricing for all our export services</p>
+            </div>
+        </section>
+
+        <!-- Pricing Section -->
+        <section class="pricing-section">
+            <div class="container">
+                <div class="pricing-grid">
+                    <!-- Export Turnkey -->
+                    <div class="pricing-card" id="turnkey">
+                        <div class="pricing-header">
+                            <div class="pricing-icon">
+                                <i class="fas fa-rocket"></i>
+                            </div>
+                            <h3 class="pricing-title" data-translate="pricing.export_turnkey.title">Export Turnkey</h3>
+                            <div class="pricing-price">
+                                <span class="price-amount">$5,000</span>
+                                <span class="price-period" data-translate="pricing.starting_from">starting from</span>
+                            </div>
+                            <button class="pricing-toggle" data-pricing="turnkey">
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                        </div>
+                        <div class="pricing-content" id="pricing-turnkey">
+                            <p class="pricing-description" data-translate="pricing.export_turnkey.description">Complete end-to-end export solution handling all aspects of international trade.</p>
+                            
+                            <div class="pricing-details">
+                                <h4 data-translate="pricing.includes">Includes:</h4>
+                                <ul class="includes-list">
+                                    <li data-translate="pricing.export_turnkey.include1">Market research and analysis</li>
+                                    <li data-translate="pricing.export_turnkey.include2">Documentation preparation</li>
+                                    <li data-translate="pricing.export_turnkey.include3">Compliance verification</li>
+                                    <li data-translate="pricing.export_turnkey.include4">Logistics coordination</li>
+                                    <li data-translate="pricing.export_turnkey.include5">Delivery tracking</li>
+                                    <li data-translate="pricing.export_turnkey.include6">3 months support</li>
+                                </ul>
+                                
+                                <div class="pricing-note">
+                                    <p data-translate="pricing.export_turnkey.note">Price varies based on product complexity and destination country.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="pricing-actions">
+                                <a href="calculator.html" class="btn btn-primary" data-translate="pricing.get_quote">Get Quote</a>
+                                <a href="services.html" class="btn btn-outline" data-translate="pricing.learn_more">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Export Potential Audit & Strategy -->
+                    <div class="pricing-card" id="audit">
+                        <div class="pricing-header">
+                            <div class="pricing-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <h3 class="pricing-title" data-translate="pricing.audit_strategy.title">Export Potential Audit & Strategy</h3>
+                            <div class="pricing-price">
+                                <span class="price-amount">$2,000</span>
+                                <span class="price-period" data-translate="pricing.starting_from">starting from</span>
+                            </div>
+                            <button class="pricing-toggle" data-pricing="audit">
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                        </div>
+                        <div class="pricing-content" id="pricing-audit">
+                            <p class="pricing-description" data-translate="pricing.audit_strategy.description">Comprehensive analysis of your export readiness and strategic roadmap development.</p>
+                            
+                            <div class="pricing-details">
+                                <h4 data-translate="pricing.includes">Includes:</h4>
+                                <ul class="includes-list">
+                                    <li data-translate="pricing.audit_strategy.include1">Business capability assessment</li>
+                                    <li data-translate="pricing.audit_strategy.include2">Market opportunity analysis</li>
+                                    <li data-translate="pricing.audit_strategy.include3">Competitive landscape review</li>
+                                    <li data-translate="pricing.audit_strategy.include4">Risk evaluation</li>
+                                    <li data-translate="pricing.audit_strategy.include5">Strategic roadmap creation</li>
+                                    <li data-translate="pricing.audit_strategy.include6">Detailed report (50+ pages)</li>
+                                </ul>
+                                
+                                <div class="pricing-note">
+                                    <p data-translate="pricing.audit_strategy.note">Includes 2 consultation sessions and follow-up support.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="pricing-actions">
+                                <a href="calculator.html" class="btn btn-primary" data-translate="pricing.get_quote">Get Quote</a>
+                                <a href="services.html" class="btn btn-outline" data-translate="pricing.learn_more">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Export Material Preparation -->
+                    <div class="pricing-card" id="materials">
+                        <div class="pricing-header">
+                            <div class="pricing-icon">
+                                <i class="fas fa-file-alt"></i>
+                            </div>
+                            <h3 class="pricing-title" data-translate="pricing.material_prep.title">Export Material Preparation</h3>
+                            <div class="pricing-price">
+                                <span class="price-amount">$1,500</span>
+                                <span class="price-period" data-translate="pricing.starting_from">starting from</span>
+                            </div>
+                            <button class="pricing-toggle" data-pricing="materials">
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                        </div>
+                        <div class="pricing-content" id="pricing-materials">
+                            <p class="pricing-description" data-translate="pricing.material_prep.description">Professional preparation of all required export documentation and marketing materials.</p>
+                            
+                            <div class="pricing-details">
+                                <h4 data-translate="pricing.includes">Includes:</h4>
+                                <ul class="includes-list">
+                                    <li data-translate="pricing.material_prep.include1">Documentation audit</li>
+                                    <li data-translate="pricing.material_prep.include2">Translation services (up to 3 languages)</li>
+                                    <li data-translate="pricing.material_prep.include3">Compliance verification</li>
+                                    <li data-translate="pricing.material_prep.include4">Marketing material adaptation</li>
+                                    <li data-translate="pricing.material_prep.include5">Quality assurance</li>
+                                    <li data-translate="pricing.material_prep.include6">Digital asset delivery</li>
+                                </ul>
+                                
+                                <div class="pricing-note">
+                                    <p data-translate="pricing.material_prep.note">Additional languages available at $200 per language.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="pricing-actions">
+                                <a href="calculator.html" class="btn btn-primary" data-translate="pricing.get_quote">Get Quote</a>
+                                <a href="services.html" class="btn btn-outline" data-translate="pricing.learn_more">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Finding First Clients -->
+                    <div class="pricing-card" id="clients">
+                        <div class="pricing-header">
+                            <div class="pricing-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <h3 class="pricing-title" data-translate="pricing.finding_clients.title">Finding First Clients</h3>
+                            <div class="pricing-price">
+                                <span class="price-amount">$3,000</span>
+                                <span class="price-period" data-translate="pricing.starting_from">starting from</span>
+                            </div>
+                            <button class="pricing-toggle" data-pricing="clients">
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                        </div>
+                        <div class="pricing-content" id="pricing-clients">
+                            <p class="pricing-description" data-translate="pricing.finding_clients.description">Strategic client acquisition services to establish your first international customer relationships.</p>
+                            
+                            <div class="pricing-details">
+                                <h4 data-translate="pricing.includes">Includes:</h4>
+                                <ul class="includes-list">
+                                    <li data-translate="pricing.finding_clients.include1">Target market identification</li>
+                                    <li data-translate="pricing.finding_clients.include2">Lead generation (50+ qualified leads)</li>
+                                    <li data-translate="pricing.finding_clients.include3">Prospect qualification</li>
+                                    <li data-translate="pricing.finding_clients.include4">Initial outreach campaigns</li>
+                                    <li data-translate="pricing.finding_clients.include5">Relationship building support</li>
+                                    <li data-translate="pricing.finding_clients.include6">CRM setup and training</li>
+                                </ul>
+                                
+                                <div class="pricing-note">
+                                    <p data-translate="pricing.finding_clients.note">Success fee: 5% of first year revenue from acquired clients.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="pricing-actions">
+                                <a href="calculator.html" class="btn btn-primary" data-translate="pricing.get_quote">Get Quote</a>
+                                <a href="services.html" class="btn btn-outline" data-translate="pricing.learn_more">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Export Support & Development -->
+                    <div class="pricing-card" id="support">
+                        <div class="pricing-header">
+                            <div class="pricing-icon">
+                                <i class="fas fa-hands-helping"></i>
+                            </div>
+                            <h3 class="pricing-title" data-translate="pricing.support_dev.title">Export Support & Development</h3>
+                            <div class="pricing-price">
+                                <span class="price-amount">$1,200</span>
+                                <span class="price-period" data-translate="pricing.per_month">per month</span>
+                            </div>
+                            <button class="pricing-toggle" data-pricing="support">
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                        </div>
+                        <div class="pricing-content" id="pricing-support">
+                            <p class="pricing-description" data-translate="pricing.support_dev.description">Ongoing support and development services for growing international business operations.</p>
+                            
+                            <div class="pricing-details">
+                                <h4 data-translate="pricing.includes">Includes:</h4>
+                                <ul class="includes-list">
+                                    <li data-translate="pricing.support_dev.include1">Performance monitoring</li>
+                                    <li data-translate="pricing.support_dev.include2">Process optimization</li>
+                                    <li data-translate="pricing.support_dev.include3">Market expansion support</li>
+                                    <li data-translate="pricing.support_dev.include4">Issue resolution</li>
+                                    <li data-translate="pricing.support_dev.include5">Growth planning</li>
+                                    <li data-translate="pricing.support_dev.include6">Monthly strategy calls</li>
+                                </ul>
+                                
+                                <div class="pricing-note">
+                                    <p data-translate="pricing.support_dev.note">Minimum 6-month commitment. Cancel anytime after that.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="pricing-actions">
+                                <a href="calculator.html" class="btn btn-primary" data-translate="pricing.get_quote">Get Quote</a>
+                                <a href="services.html" class="btn btn-outline" data-translate="pricing.learn_more">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Custom Solutions -->
+                <div class="custom-solutions">
+                    <div class="custom-card">
+                        <div class="custom-icon">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <h3 data-translate="pricing.custom.title">Need a Custom Solution?</h3>
+                        <p data-translate="pricing.custom.description">We offer tailored packages for businesses with unique requirements. Contact us for a personalized quote.</p>
+                        <a href="index.html#contact" class="btn btn-primary" data-translate="pricing.custom.contact">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-globe-americas"></i>
+                        <span class="logo-text">Export Go</span>
+                    </div>
+                    <p class="footer-description" data-translate="footer.description">Your trusted partner for international export solutions and global business expansion.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title" data-translate="footer.services">Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="services.html" data-translate="footer.export_turnkey">Export Turnkey</a></li>
+                        <li><a href="services.html" data-translate="footer.audit_strategy">Audit & Strategy</a></li>
+                        <li><a href="services.html" data-translate="footer.material_prep">Material Preparation</a></li>
+                        <li><a href="services.html" data-translate="footer.client_finding">Finding Clients</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title" data-translate="footer.company">Company</h3>
+                    <ul class="footer-links">
+                        <li><a href="about.html" data-translate="footer.about">About Us</a></li>
+                        <li><a href="blog.html" data-translate="footer.blog">Blog</a></li>
+                        <li><a href="portal.html" data-translate="footer.portal">Client Portal</a></li>
+                        <li><a href="calculator.html" data-translate="footer.calculator">Calculator</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title" data-translate="footer.contact">Contact</h3>
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                        <p><i class="fas fa-envelope"></i> info@exportgo.com</p>
+                        <p><i class="fas fa-map-marker-alt"></i> 123 Business Ave, Suite 100, New York, NY 10001</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="newsletter">
+                    <h4 data-translate="footer.newsletter">Subscribe to our newsletter</h4>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter your email" data-translate-placeholder="footer.email_placeholder" required>
+                        <button type="submit" data-translate="footer.subscribe">Subscribe</button>
+                    </form>
+                </div>
+                <div class="footer-copyright">
+                    <p>&copy; 2024 Export Go. <span data-translate="footer.rights">All rights reserved.</span></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

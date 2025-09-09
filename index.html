@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Export Go - International Export Consulting</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <a href="index.html" class="logo-link">
+                        <i class="fas fa-globe-americas"></i>
+                        <span class="logo-text">Export Go</span>
+                    </a>
+                </div>
+                
+                <div class="nav-menu" id="nav-menu">
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="services.html" class="nav-link" data-translate="nav.services">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="pricing.html" class="nav-link" data-translate="nav.pricing">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="blog.html" class="nav-link" data-translate="nav.blog">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="portal.html" class="nav-link" data-translate="nav.portal">Portal</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="calculator.html" class="nav-link" data-translate="nav.calculator">Calculator</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#contact" class="nav-link" data-translate="nav.contacts">Contacts</a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="nav-actions">
+                    <div class="language-selector">
+                        <button class="language-btn" id="language-btn">
+                            <i class="fas fa-globe"></i>
+                            <span id="current-lang">EN</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="language-dropdown" id="language-dropdown">
+                            <a href="#" class="language-option" data-lang="en">English</a>
+                            <a href="#" class="language-option" data-lang="ru">Русский</a>
+                            <a href="#" class="language-option" data-lang="fr">Français</a>
+                            <a href="#" class="language-option" data-lang="es">Español</a>
+                            <a href="#" class="language-option" data-lang="zh">中文</a>
+                        </div>
+                    </div>
+                    
+                    <div class="cta-buttons">
+                        <a href="calculator.html" class="btn btn-primary" data-translate="cta.start_export">Start Export</a>
+                        <a href="#contact" class="btn btn-secondary" data-translate="cta.get_consultation">Get Consultation</a>
+                    </div>
+                    
+                    <div class="nav-toggle" id="nav-toggle">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title" data-translate="hero.title">Expand Your Business Globally with Expert Export Solutions</h1>
+                    <p class="hero-subtitle" data-translate="hero.subtitle">From strategy to execution, we guide manufacturers, distributors, and networks through successful international expansion</p>
+                    <div class="hero-actions">
+                        <a href="services.html" class="btn btn-primary btn-large" data-translate="cta.explore_services">Explore Our Services</a>
+                        <a href="calculator.html" class="btn btn-outline btn-large" data-translate="cta.calculate_cost">Calculate Export Cost</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="hero-graphic">
+                        <i class="fas fa-shipping-fast"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Who We Serve Section -->
+        <section class="who-we-serve">
+            <div class="container">
+                <h2 class="section-title" data-translate="who_we_serve.title">Who We Serve</h2>
+                <div class="serve-cards">
+                    <div class="serve-card">
+                        <div class="card-icon">
+                            <i class="fas fa-industry"></i>
+                        </div>
+                        <h3 class="card-title" data-translate="who_we_serve.manufacturer">Manufacturers</h3>
+                        <p class="card-description" data-translate="who_we_serve.manufacturer_desc">Turnkey export solutions for product manufacturers ready to enter global markets</p>
+                        <a href="services.html?filter=manufacturer" class="card-link" data-translate="common.learn_more">Learn More</a>
+                    </div>
+                    
+                    <div class="serve-card">
+                        <div class="card-icon">
+                            <i class="fas fa-store"></i>
+                        </div>
+                        <h3 class="card-title" data-translate="who_we_serve.distributor">Distributors</h3>
+                        <p class="card-description" data-translate="who_we_serve.distributor_desc">Strategic partnerships and network expansion for distribution companies</p>
+                        <a href="services.html?filter=distributor" class="card-link" data-translate="common.learn_more">Learn More</a>
+                    </div>
+                    
+                    <div class="serve-card">
+                        <div class="card-icon">
+                            <i class="fas fa-network-wired"></i>
+                        </div>
+                        <h3 class="card-title" data-translate="who_we_serve.network">Networks</h3>
+                        <p class="card-description" data-translate="who_we_serve.network_desc">Comprehensive support for business networks seeking international growth</p>
+                        <a href="services.html?filter=network" class="card-link" data-translate="common.learn_more">Learn More</a>
+                    </div>
+                    
+                    <div class="serve-card">
+                        <div class="card-icon">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <h3 class="card-title" data-translate="who_we_serve.other">Other Services</h3>
+                        <p class="card-description" data-translate="who_we_serve.other_desc">Customized export solutions for businesses of all sizes and industries</p>
+                        <a href="services.html?filter=all" class="card-link" data-translate="common.learn_more">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Export Go Section -->
+        <section class="why-export-go">
+            <div class="container">
+                <h2 class="section-title" data-translate="why_export_go.title">Why Choose Export Go</h2>
+                <div class="features-grid">
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3 class="feature-title" data-translate="why_export_go.expertise">Expert Knowledge</h3>
+                        <p class="feature-description" data-translate="why_export_go.expertise_desc">Years of experience in international trade and export regulations</p>
+                    </div>
+                    
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h3 class="feature-title" data-translate="why_export_go.speed">Fast Execution</h3>
+                        <p class="feature-description" data-translate="why_export_go.speed_desc">Streamlined processes to get your products to market quickly</p>
+                    </div>
+                    
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3 class="feature-title" data-translate="why_export_go.compliance">Full Compliance</h3>
+                        <p class="feature-description" data-translate="why_export_go.compliance_desc">Ensuring all documentation and regulations are properly handled</p>
+                    </div>
+                    
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <h3 class="feature-title" data-translate="why_export_go.support">Ongoing Support</h3>
+                        <p class="feature-description" data-translate="why_export_go.support_desc">Continuous assistance throughout your export journey</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Case Studies Section -->
+        <section class="case-studies">
+            <div class="container">
+                <h2 class="section-title" data-translate="case_studies.title">Success Stories</h2>
+                <div class="testimonials">
+                    <div class="testimonial">
+                        <div class="testimonial-content">
+                            <p class="testimonial-text" data-translate="case_studies.testimonial1">"Export Go helped us expand to 15 new markets in just 8 months. Their expertise in documentation and compliance saved us countless hours and potential legal issues."</p>
+                            <div class="testimonial-author">
+                                <div class="author-info">
+                                    <h4 class="author-name" data-translate="case_studies.author1">Sarah Johnson</h4>
+                                    <p class="author-title" data-translate="case_studies.title1">CEO, TechManufacturing Inc.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial">
+                        <div class="testimonial-content">
+                            <p class="testimonial-text" data-translate="case_studies.testimonial2">"The team's knowledge of international regulations and their network of partners made our European expansion seamless and profitable."</p>
+                            <div class="testimonial-author">
+                                <div class="author-info">
+                                    <h4 class="author-name" data-translate="case_studies.author2">Michael Chen</h4>
+                                    <p class="author-title" data-translate="case_studies.title2">Export Manager, Global Distributors</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-content">
+                    <h2 class="cta-title" data-translate="cta_section.title">Ready to Start Your Export Journey?</h2>
+                    <p class="cta-description" data-translate="cta_section.description">Get a free consultation and discover how we can help your business go global</p>
+                    <div class="cta-actions">
+                        <a href="calculator.html" class="btn btn-primary btn-large" data-translate="cta.get_started">Get Started</a>
+                        <a href="#contact" class="btn btn-outline btn-large" data-translate="cta.contact_us">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-globe-americas"></i>
+                        <span class="logo-text">Export Go</span>
+                    </div>
+                    <p class="footer-description" data-translate="footer.description">Your trusted partner for international export solutions and global business expansion.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title" data-translate="footer.services">Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="services.html" data-translate="footer.export_turnkey">Export Turnkey</a></li>
+                        <li><a href="services.html" data-translate="footer.audit_strategy">Audit & Strategy</a></li>
+                        <li><a href="services.html" data-translate="footer.material_prep">Material Preparation</a></li>
+                        <li><a href="services.html" data-translate="footer.client_finding">Finding Clients</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title" data-translate="footer.company">Company</h3>
+                    <ul class="footer-links">
+                        <li><a href="about.html" data-translate="footer.about">About Us</a></li>
+                        <li><a href="blog.html" data-translate="footer.blog">Blog</a></li>
+                        <li><a href="portal.html" data-translate="footer.portal">Client Portal</a></li>
+                        <li><a href="calculator.html" data-translate="footer.calculator">Calculator</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title" data-translate="footer.contact">Contact</h3>
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                        <p><i class="fas fa-envelope"></i> info@exportgo.com</p>
+                        <p><i class="fas fa-map-marker-alt"></i> 123 Business Ave, Suite 100, New York, NY 10001</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="newsletter">
+                    <h4 data-translate="footer.newsletter">Subscribe to our newsletter</h4>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter your email" data-translate-placeholder="footer.email_placeholder" required>
+                        <button type="submit" data-translate="footer.subscribe">Subscribe</button>
+                    </form>
+                </div>
+                <div class="footer-copyright">
+                    <p>&copy; 2024 Export Go. <span data-translate="footer.rights">All rights reserved.</span></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
